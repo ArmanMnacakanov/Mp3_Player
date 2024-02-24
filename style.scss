@@ -1,0 +1,83 @@
+* {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Mp3 {
+  
+  width: 400px;
+  height: auto;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px auto;
+  gap: 15px;
+
+  @media (min-width:320px) and (max-width:552px){
+    height: 115vh;
+    border-radius: 0;
+    margin: 0;
+  }
+
+ 
+
+  #albumArt {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 5px solid orange;
+    object-fit: cover;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.822);
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  h3 {
+    color: orange;
+  }
+
+  #audioControls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    button {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-radius: 30px;
+      border: 3px solid transparent;
+      background-color: rgb(20, 20, 20);
+      color: orange;
+      transition: .4s;
+      cursor: pointer;
+
+      &:hover {
+        border-color: orange;
+      }
+    }
+  }
+
+}
